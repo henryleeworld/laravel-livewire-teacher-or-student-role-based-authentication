@@ -1,4 +1,4 @@
-# Laravel 8 Livewire 以教師或學生角色為基礎的認證
+# Laravel 10 Livewire 以教師或學生角色為基礎的認證
 
 使用者可看到哪些頁面及進行那些操作，完全取決於使用者教師或學生角色權限。
 
@@ -20,9 +20,13 @@ $ php artisan key:generate
 ```sh
 $ php artisan migrate --seed
 ```
-- 執行安裝 Laravel Mix 引用的依賴項目，並執行所有 Mix 任務。
+- 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
 ```sh
-$ npm install && npm run dev
+$ npm install
+```
+- 執行正式環境版本化資源管道並編譯。
+```sh
+$ npm run build
 ```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/register` 來進行註冊。
@@ -31,8 +35,8 @@ $ npm install && npm run dev
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/u9LQ3cs.png)
+![](https://i.imgur.com/Xiiiq8M.png)
 > 如果使用者以教師角色登入，僅供教師存取頁面則可以瀏覽
 
-![](https://i.imgur.com/rHvHgWS.png)
+![](https://i.imgur.com/jaQ8NWd.png)
 > 如果使用者以教師角色登入，僅供學生存取頁面則無法瀏覽

@@ -11,15 +11,11 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-
+        @vite(['resources/css/app.css'])
         @livewireStyles
-
-        <!-- Scripts -->
-        <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     <body class="font-sans antialiased">
-        <x-jet-banner />
+        <x-banner />
 
         <div class="min-h-screen bg-blue-100">
             @livewire('navigation-menu')
@@ -36,9 +32,9 @@
                 {{ $slot }}
             </main>
         </div>
-
+        <!-- Scripts -->
+        @vite(['resources/js/app.js'])
         @stack('modals')
-
         @livewireScripts
     </body>
 </html>
