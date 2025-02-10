@@ -1,4 +1,4 @@
-# Laravel 10 Livewire 以教師或學生角色為基礎的認證
+# Laravel 11 Livewire 以教師或學生角色為基礎的認證
 
 使用者可看到哪些頁面及進行那些操作，完全取決於使用者教師或學生角色權限。
 
@@ -35,8 +35,8 @@ $ npm run build
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/Xiiiq8M.png)
+![](https://i.imgur.com/JFrFuBs.png)
 > 如果使用者以教師角色登入，僅供教師存取頁面則可以瀏覽
 
-![](https://i.imgur.com/jaQ8NWd.png)
+![](https://i.imgur.com/eiF5gKQ.png)
 > 如果使用者以教師角色登入，僅供學生存取頁面則無法瀏覽
